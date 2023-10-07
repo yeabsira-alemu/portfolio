@@ -22,7 +22,7 @@ export default function HeaderPage(){
            <div className="nav-container">
               <div className="sub-nav-container">
                   <div className="nav-logo-container"> <CIcon icon={icon.cilChevronDoubleLeft
-}  style={{width: "45px", color: "#fff"}}/>izo</div>
+}  style={{width: "45px", color: "#fff"}}/>izoTech</div>
                   <div className="nav-links-container">
                     {navLinkRender}
                   </div>
