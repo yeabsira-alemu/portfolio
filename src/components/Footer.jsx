@@ -1,12 +1,12 @@
 import React from "react";
 import CIcon from '@coreui/icons-react';
 import * as icon from '@coreui/icons';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Footer.css"
 export default function FooterPage(){
 
-const github = <CIcon icon={icon.cibGithub} style={{width: "25px"}}/>
-const linkedIn = <CIcon icon={icon.cibLinkedin} style={{width: "25px"}}/>
+const github = <CIcon icon={icon.cibGithub} style={{width: "25px", color: "#fff"}}/>
+const linkedIn = <CIcon icon={icon.cibLinkedin} style={{width: "25px", color:"#fff"}}/>
 const instagram = <CIcon icon={icon.cibInstagram} style={{width: "25px"}}/>
 
 const socialMediaLinks = 
@@ -26,7 +26,7 @@ const socialMediaRender = socialMediaLinks.map(eachSocialMedia=>{
             <div className="sub-footer-container">
               <div className="logo-email-description-media-footer-cont">
                    <div className="logo-and-email-footer"><CIcon icon={icon.cilChevronDoubleLeft
-}  style={{width: "40px", color: "#fff"}}/><span className="email-footer">yeabalex18@gmail.com</span><p className="description-footer">AWS Solution Architect and full stack developer from <br></br>Addis Ababa, Ethiopia</p></div>
+}  style={{width: "40px", color: "#fff"}}/><Link to="yeabalex18@gmail.com" className="email-footer">yeabalex18@gmail.com</Link><p className="description-footer">AWS Solution Architect and full stack developer from <br></br>Addis Ababa, Ethiopia</p></div>
                </div>
                    <div className="media-logo-footer">
                      <h2 className="contact-footer">Contact</h2>

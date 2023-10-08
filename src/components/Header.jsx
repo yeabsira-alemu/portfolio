@@ -5,15 +5,21 @@ import { Link, NavLink } from "react-router-dom"
 import "./Header.css"
 export default function HeaderPage(){
 
+    const activeStyles = 
+    {
+        opacity: 1,
+        textDecoration: "underline" 
+    }
+
     const navLinks = 
     [
-        {value: "home", id: 1},
-        {value: "works", id: 2},
-        {value: "about-me", id: 3},
-        {value: "contacts", id: 4}
+        {value: "home", id: 1, to: "/"},
+        {value: "works", id: 2, to: "/works"},
+        {value: "about-me", id: 3, to: "/about-me"},
+        {value: "contacts", id: 4, to: "/contacts"}
     ]
     const navLinkRender = navLinks.map(eachNavItem=>{
-        return <NavLink className={`${eachNavItem.value} nav`}>
+        return <NavLink to={eachNavItem.to} style={({isActive})=>isActive?activeStyles:null} className={`${eachNavItem.value} nav`}>
             <span className="hashtag-nav">#</span>{eachNavItem.value}
         </NavLink>
     })
@@ -21,8 +27,8 @@ export default function HeaderPage(){
         <>
            <div className="nav-container">
               <div className="sub-nav-container">
-                  <div className="nav-logo-container"> <CIcon icon={icon.cilChevronDoubleLeft
-}  style={{width: "45px", color: "#fff"}}/>izoTech</div>
+                  <Link to="/"> <CIcon icon={icon.cilChevronDoubleLeft
+}  style={{width: "45px", color: "#fff"}}/></Link>
                   <div className="nav-links-container">
                     {navLinkRender}
                   </div>

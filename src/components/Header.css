@@ -1,6 +1,7 @@
 .nav {
     color: #ffffff;
     text-decoration: none;
+    opacity: .5;
 }
 .hashtag-nav {
     color: #C778DD;
@@ -27,6 +28,12 @@
     padding-top: 25px;
     position: fixed;
     z-index: 1000;
-   ;
-   top: 0;
+    top: 0;
+}
+.nav:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+.line-nav {
+    height: 10px;
 }
