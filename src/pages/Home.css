@@ -3,6 +3,7 @@
     width: 1024px;
     height: 423px;
     border: 1px solid;
+    display: flex;
 }
 .home-page-container {
     width: 100%;
@@ -11,4 +12,33 @@
     justify-content: center;
     margin-top: 70px;
     padding: 50px;
+}
+.home-head-description-button {
+    width: 537px;
+    height: 227px;
+}
+.job-description-animation {
+  
+    color: #C778DD;
+}
+@keyframes typeAnimation {
+    0%, 100% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+}
+.header-text-home {
+    color: #ffffff;
+    font-weight: 650;
+    letter-spacing: .25rem;
+    font-size: 1.3rem;
+}
+.description-text-home {
+    width: 400px;
+    height: 55px;
+    color: #ffffff;
+    font-size: .8rem;
+    opacity: .6;
 }
