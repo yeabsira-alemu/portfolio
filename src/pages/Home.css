@@ -2,8 +2,8 @@
     
     width: 1024px;
     height: 423px;
-    border: 1px solid;
     display: flex;
+ 
 }
 .home-page-container {
     width: 100%;
@@ -12,6 +12,7 @@
     justify-content: center;
     margin-top: 70px;
     padding: 50px;
+    
 }
 .home-head-description-button {
     width: 537px;
@@ -31,14 +32,127 @@
 }
 .header-text-home {
     color: #ffffff;
-    font-weight: 650;
+    
     letter-spacing: .25rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    height: 84px;
+    line-height: 40px;
 }
 .description-text-home {
-    width: 400px;
+    width: 450px;
     height: 55px;
     color: #ffffff;
     font-size: .8rem;
     opacity: .6;
+    line-height: 20px;
+}
+.the-home-page-img {
+    width: 457px;
+    height: 386px;
+    
+}
+.home-image-and-effect {
+    width: 469px;
+    height: 386px;
+}
+.home-head-description-button {
+    width: 537px;
+    height: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+.contact-me-button-home-page {
+    width: 148px;
+    height: 37px;
+    cursor: pointer;
+    background-color: #C778DD;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-me-button-home-page:hover {
+    background-color: #A05AC2; 
+}
+.status-container {
+    width: 402px;
+    height: 37px;
+    border: 2px solid #ABB2BF;
+    margin-left: 18px;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    gap: 10px;
+}
+.status-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #C778DD;
+    border-radius: 50%;
+}
+.status-text {
+    color: #fff;
+}
+.dot-picture {
+    position: absolute;
+    left:720px;
+    top: 250px;
+    z-index: -1;
+}
+.circle, .rectangle {
+    position: absolute;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #C778DD;
+    top: 280px;
+    left: 1000px;
+    z-index: -1;
+}
+.rectangle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #C778DD;
+    position: absolute;
+    top: 230px;
+    left: 930px;
+    z-index: -1;
+}
+.home-page-ver-line-and-social-media {
+    width: 32px;
+    height: 311px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 10px;
+}
+.home-page-ver-line {
+    height: 191px;
+    width: 1px;
+    background-image: linear-gradient(#C778DD, white, #282C33);
+}
+.social-media-links {
+    width: 32px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(#C778DD, white, #282C33);
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: visible;
+}
+.github-extension:hover {
+    width: 50px;
 }
