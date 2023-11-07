@@ -26,7 +26,7 @@ export default function HomePage() {
     animation: "typeAnimation 6s linear infinite",
   };
 
-const github = <CIcon className="githun-extension" icon={icon.cibGithub} style={{width: "25px", color: "#fff"}}/>
+const github = <CIcon className="github-extension" icon={icon.cibGithub} style={{width: "25px", color: "#fff"}}/>
 const linkedIn = <CIcon className="linkedin-extension" icon={icon.cibLinkedin} style={{width: "25px", color:"#fff"}}/>
 const instagram = <CIcon className="ig-extension" icon={icon.cibInstagram} style={{width: "25px"}}/>
 
